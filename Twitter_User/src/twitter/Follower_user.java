@@ -20,8 +20,8 @@ public class Follower_user {
 		
 		ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
-          .setOAuthConsumerKey("kQuekE6EIavJNhx4JeU6logvO")
-          .setOAuthConsumerSecret("JtwwRB6EjPMfXHtjgJPmcVFRcOyScYmTn2qUSnWEq2obO0wEq6")
+          .setOAuthConsumerKey("8P8swXdObRfebfD8UFGhLF33e")
+          .setOAuthConsumerSecret("EBKES2ObNFoosOlcTVZI9riBF02FpRI0lWVycVcpCqOsbo3bYW")
           .setOAuthAccessToken("109454161-szNU5HErMwwNtwGGYznBybjUCwkbkCPe3sxLWL10")
           .setOAuthAccessTokenSecret("BXNvo9ulBb9yYJFPourZwTvmL32laErIGSx5gbkBqIwO7");
         TwitterFactory tf = new TwitterFactory(cb.build());
