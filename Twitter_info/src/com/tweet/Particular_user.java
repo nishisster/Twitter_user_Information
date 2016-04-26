@@ -29,20 +29,19 @@ package com.tweet;
 			        try {
 			            ConfigurationBuilder cb = new ConfigurationBuilder();
 			            cb.setDebugEnabled(true)
-			              .setOAuthConsumerKey("t0dMXIFB3DTNgXguibSWjcOqt")
-			              .setOAuthConsumerSecret("nJOzHk6ENVmJPPF9o5elG00Etw0FnSyTx8aZSjYdvdHATkE6NE")
-			              .setOAuthAccessToken("724341148743954433-BFb5S6KYmfX0ReLxesJ46P8CD8Fw3TX")
-			              .setOAuthAccessTokenSecret("or9p3699R93xWGqWVLejJcvqGY9yANbgIYIRJ67MarsmG");
+			          .setOAuthConsumerKey("8P8swXdObRfebfD8UFGhLF33e")
+			      .setOAuthConsumerSecret("EBKES2ObNFoosOlcTVZI9riBF02FpRI0lWVycVcpCqOsbo3bYW")
+			       .setOAuthAccessToken("109454161-szNU5HErMwwNtwGGYznBybjUCwkbkCPe3sxLWL10")         .setOAuthAccessTokenSecret("BXNvo9ulBb9yYJFPourZwTvmL32laErIGSx5gbkBqIwO7");
 			            TwitterFactory tf = new TwitterFactory(cb.build());
 			            Twitter twitter1 = tf.getInstance();
 			            //String twitterscreenname = twitter.getScreenName();
-		                PagableResponseList<User> twitterfollowers = twitter.getFollowersList("Nishitha", -1);
+		                PagableResponseList<User> twitterfollowers = twitter.getFollowersList("shajuvk", 109454161);
 		                  System.out.println(twitterfollowers);
 			              //Configuration config =  twitter.getConfiguration();
-			            IDs followerids = twitter.getFollowersIDs("Nishitha", -1);
+			            IDs followerids = twitter.getFollowersIDs("shajuvk", 109454161);
 			            long[] ids = followerids.getIDs();
 			            usr = twitter1.verifyCredentials().getScreenName();
-		                String urlAdd = "https://api.twitter.com/1.1/followers/list.json?cursor=-1&screen_name=Nishitha&skip_status=true&include_user_entities=false";
+		                String urlAdd = "https://api.twitter.com/1.1/followers/list.json?cursor=-1&screen_name=shajuvk&skip_status=true&include_user_entities=false";
 		                URL url = new URL(urlAdd);
 		                System.out.println(url);
 		                URLConnection urlConnection = url.openConnection();
